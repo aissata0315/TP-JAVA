@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int a,b,c,delta;
-        double x1,x2,x0=0;
+        double x1,x2,x0;
         System.out.println("Donnez a");
         a = scan.nextInt();
         System.out.println("Donnez b");
@@ -16,7 +16,7 @@ public class Main {
         c = scan.nextInt();
         delta = (b*b)-4*(a*c);
         double racinedelta;
-        racinedelta=Math.sqrt(delta);
+        racinedelta=Math.sqrt(delta); 
         if (delta>0)
         {
             x1 = (-b - racinedelta)/2*a;
@@ -24,12 +24,13 @@ public class Main {
             System.out.println("les solutions sont:" +x1 +x2);
 
         }
-        else
         if (delta==0)
         {
                 x0 = (-b)/(2*a);
             System.out.println("la solution est:" +x0);
         }
+        if (delta < 0 )
+            System.out.println("impossible");
 
     }
 }

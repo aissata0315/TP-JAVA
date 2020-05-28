@@ -8,34 +8,35 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int a,b;
         double resultat;
-        char c;
+        String c;
         System.out.println("Entrez l'entier a");
         a = scan.nextInt();
+        scan.nextLine();
         System.out.println("Quel opérarion souhaiterai vous faire?");
-        c = scan.next().charAt(0);
+        c = scan.nextLine();
         System.out.println("Entrez l'entier b");
         b = scan.nextInt();
-        if ('c'=='+')
+        if ( c.equals("+"))
         {
             resultat = a+b;
             System.out.println("L'addition donne:" +resultat);
         }
         else
-            if('c'=='-')
+            if(c.equals("-"))
             {
                 resultat = a-b;
                 System.out.println("La soustraction de"+a+"et "+b+"donne:" +resultat);
             }
             else
-                if ('c'=='/')
+                if (c.equals("/"))
                 {
                     resultat = a/b;
                     System.out.println("La division de"+a+"et "+b+"donne:" +resultat);
                 } else
-                    if ('c'=='*')
+                    if (c.equals("*"))
                     {
                         resultat = a*b;
-                        System.out.println("La division de"+a+"et "+b+"donne:" +resultat);
+                        System.out.println("La multiplication de"+a+"et "+b+"donne:" +resultat);
                     }
 
     }

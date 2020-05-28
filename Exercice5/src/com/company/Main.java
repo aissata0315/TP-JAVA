@@ -10,8 +10,8 @@ public class Main {
         for (i=1;i<=5;i++)
         {
             System.out.println("Entrez une valeur?");
-            i = scan.nextInt();
-            somme = somme +i;
+            nombre = scan.nextInt();
+            somme = somme +nombre;
         }
         System.out.println("la somme est:" +somme);
     }

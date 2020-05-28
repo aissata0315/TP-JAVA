@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int nombre, x,longueur = 0,debut = 0,fin = 0,k,j;
+        int nombre,longueur = 0,debut = 0,fin = 0,k,j;
         int tableauentier[] = new int[100];
         //System.out.println("Donnez la taille du tableau");
         //x = scan.nextInt();
